@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+src/scdi/__init__.py
+src/scdi/backtest.py
+src/scdi/config.py
+src/scdi/data.py
+src/scdi/forecast.py
+src/scdi/inventory.py
+src/scdi/model.py
+src/scdi.egg-info/PKG-INFO
+src/scdi.egg-info/SOURCES.txt
+src/scdi.egg-info/dependency_links.txt
+src/scdi.egg-info/requires.txt
+src/scdi.egg-info/top_level.txt

@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: scdi
+Version: 0.1.0
+Summary: Supply Chain — Demand & Inventory Co-Design
+Requires-Python: >=3.10
+Provides-Extra: dev
+License-File: LICENSE
