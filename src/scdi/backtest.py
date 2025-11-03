@@ -1,6 +1,8 @@
 import pandas as pd
-from .forecast import train_pooled, forecast_quantiles
-from .inventory import reorder_point, order_up_to, round_constraints
+
+from .forecast import forecast_quantiles, train_pooled
+from .inventory import order_up_to, reorder_point, round_constraints
+
 
 def rolling_backtest(df: pd.DataFrame, start_week, horizons=8, case_pack=1, moq=0, lead_time=2):
     his = df[df["week_start"] < start_week].copy()
@@ -37,7 +39,16 @@ def rolling_backtest(df: pd.DataFrame, start_week, horizons=8, case_pack=1, moq=
         last_order = order_qty
         on_order += order_qty
 
-        records.append(dict(week=wk, demand=demand_t, sales=sales_t,
-                            lost_sales=lost_sales, order=order_qty,
-                            on_hand=on_hand, s=float(s), S=float(S)))
+        records.append(
+            dict(
+                week=wk,
+                demand=demand_t,
+                sales=sales_t,
+                lost_sales=lost_sales,
+                order=order_qty,
+                on_hand=on_hand,
+                s=float(s),
+                S=float(S),
+            )
+        )
     return pd.DataFrame(records)

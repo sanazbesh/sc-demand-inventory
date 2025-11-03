@@ -13,3 +13,4 @@ src/scdi.egg-info/SOURCES.txt
 src/scdi.egg-info/dependency_links.txt
 src/scdi.egg-info/requires.txt
 src/scdi.egg-info/top_level.txt
+tests/test_import.py

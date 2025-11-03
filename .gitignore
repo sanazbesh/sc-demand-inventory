@@ -17,3 +17,5 @@ data/processed/*
 !data/processed/.gitkeep
 artifacts/
 models/
+lightning_logs/
+*.ckpt

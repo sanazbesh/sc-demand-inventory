@@ -1,7 +1,23 @@
-Metadata-Version: 2.1
+Metadata-Version: 2.4
 Name: scdi
 Version: 0.1.0
 Summary: Supply Chain — Demand & Inventory Co-Design
 Requires-Python: >=3.10
-Provides-Extra: dev
 License-File: LICENSE
+Requires-Dist: pandas>=2.2
+Requires-Dist: numpy>=1.26
+Requires-Dist: pyarrow>=16.1
+Requires-Dist: scikit-learn>=1.5
+Requires-Dist: lightgbm>=4.3
+Requires-Dist: xgboost>=2.0
+Requires-Dist: statsmodels>=0.14
+Requires-Dist: plotly>=5.24
+Requires-Dist: streamlit>=1.37
+Requires-Dist: orjson>=3.10
+Provides-Extra: dev
+Requires-Dist: pytest>=8.0; extra == "dev"
+Requires-Dist: pytest-cov>=5.0; extra == "dev"
+Requires-Dist: ruff>=0.6; extra == "dev"
+Requires-Dist: pre-commit>=3.7; extra == "dev"
+Requires-Dist: ipykernel; extra == "dev"
+Dynamic: license-file
