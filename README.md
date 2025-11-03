@@ -1,4 +1,5 @@
 **🧠 Supply Chain Demand Forecasting**
+
 This project implements a Temporal Fusion Transformer (TFT) model for multi-week demand forecasting.
 It uses PyTorch Forecasting for training and Streamlit for interactive visualization.
 
@@ -41,4 +42,5 @@ streamlit run app/streamlit_app.py
 #### 📊 Dashboard Preview
 
 Shows actual vs forecasted weekly demand and forecast tables for each SKU-location combination.
+
 
